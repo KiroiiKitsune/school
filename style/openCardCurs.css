@@ -169,6 +169,7 @@
 
 .info {
     margin-top: 160px;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 90px;
+    padding: 0 200px;
 }

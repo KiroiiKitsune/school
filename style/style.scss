@@ -1,4 +1,6 @@
 @import 'fonts';
+@import 'infoSchool';
+@import 'cours';
 
 * {
     margin: 0;
@@ -8,7 +10,7 @@
 
 a {
   text-decoration: none;
-  color:var(--medium-grey);
+  color:var(--medium-gray);
 }
 
 li {
@@ -20,7 +22,7 @@ li {
  --yellow: rgb(251, 223, 0);
  --black: rgb(0, 0, 0);
  --white: rgb(255, 255, 255);
- --medium-grey:rgb(129, 128, 128);
+ --medium-gray:rgb(129, 128, 128);
  --dark-gray:rgb(25, 25, 25);
  --light-gray:rgb(227, 227, 227);
 }
@@ -29,17 +31,18 @@ li {
 
 html,
 body {
-    font-family: gothampro_regular; 
+    font-family: gothampro_regular;
+    background-color: var(--black);
     
 }
 
 .center {
-    padding-left: calc(50% - 900px);
-    padding-right: calc(50% - 900px);
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
 }
 
 .nav {
-   height: 90px;
+   height: 100px;
    background: var(--yellow);
 }
 
@@ -56,10 +59,10 @@ body {
     font-style: normal;
 }
 
-.logo-img,
-.footer-logo-img {
-    width: 40px;
-    height: 50px;
+.logo-img
+ {
+    width: 250px;
+    height: 60px;
 }
 
 .nav-list {
@@ -68,7 +71,7 @@ body {
     align-items: center;
 }
 
-.nav-item {
+.nav-item a {
     color: var(--black);
 }
 
@@ -170,12 +173,15 @@ background-color: var(--black);
     margin-top: 75px;
 }
 
+.cours-title-filmf {
+    padding-left: 300px;
+}
+
 .info {
     margin: 40px 0;
    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 90px;
-    padding: 0 200px;
+    gap: 30px;
 }
 
 
@@ -184,14 +190,16 @@ background-color: var(--black);
 .footer {
     display: flex;
     background:  var(--dark-gray);
-    height: 200px;
+    height: 210px;
 }
 
 .footer-logo {
-    color: var(--yellow);
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 55px;
+    margin: 20px 0;
+}
+
+.footer-logo-img {
+    width: 126px;
+    height: 170px;
 }
 
 .footer-con {
@@ -217,4 +225,30 @@ background-color: var(--black);
     background-repeat: no-repeat;
     background-size: cover;
     height: 820px;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+}
+
+.information-img {
+    background-image: url(../img/Луч2.png);
+    background-repeat: no-repeat;
+    background-size: 1920px 820px;
+    position: absolute;
+    width: 1903px;
+    height: 820px;
+    z-index: 1;
+    margin: 0 auto;
+    left: 0px;
+}
+
+.information-text {
+    margin-top: 200px;
+    z-index: 3;
+    position: absolute;
+
+}
+
+.masster {
+    position: relative;
 }
