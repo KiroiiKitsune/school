@@ -1,0 +1,254 @@
+@import 'fonts';
+@import 'infoSchool';
+@import 'cours';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color:var(--medium-gray);
+}
+
+li {
+  list-style-type: none;
+}
+
+
+:root {
+ --yellow: rgb(251, 223, 0);
+ --black: rgb(0, 0, 0);
+ --white: rgb(255, 255, 255);
+ --medium-gray:rgb(129, 128, 128);
+ --dark-gray:rgb(25, 25, 25);
+ --light-gray:rgb(227, 227, 227);
+}
+
+
+
+html,
+body {
+    font-family: gothampro_regular;
+    background-color: var(--black);
+    
+}
+
+.center {
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
+}
+
+.nav {
+   height: 100px;
+   background: var(--yellow);
+}
+
+.nav-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo {
+    color: var(--black);
+    font-size: 40px;
+    font-family: gothampro_black, sans-serif;
+    font-style: normal;
+}
+
+.logo-img
+ {
+    width: 250px;
+    height: 60px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 0 30px;
+    align-items: center;
+}
+
+.nav-item a {
+    color: var(--black);
+}
+
+.header {
+background-color: var(--black);
+}
+
+.header-content {
+    position: absolute;
+    top: 250px;
+    left: 70px;
+    z-index: 2;
+}
+
+.header-container {
+    margin: 0 auto;
+}
+
+.header-titel {
+    color: var(--white);
+}
+
+.header-quote {
+    position: absolute;
+    top: 260px;
+    left: 1231px;
+    z-index: 2;
+    width: 641px;
+}
+
+.header-quate-text {
+    color: var(--white);
+    font-size: 27px;
+    font-family: gothampro_italic;
+  
+}
+
+.header-quate-text-av {
+     text-align: end;
+}
+
+
+.video {
+    position: relative;  
+}
+
+.video-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 56%;
+    z-index: 1;
+}
+
+
+.mentors {
+    background-image: url(/img/93P58PIC1ezInGr1b8BfC_PIC2018.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -8px -1668px;
+    height: 700px;
+}
+
+
+.course {
+    padding-top: 90px;
+    padding-bottom: 10px;
+    background-color: var(--black);
+}
+
+
+.course-prog-img {
+    width: 250px;
+    right: 91px;
+    position: relative;
+    bottom: 30px;
+    transform: rotate(329deg);
+}
+
+.course-prog-img2 {
+    width: 250px;
+    position: relative;
+    bottom: 50px;
+    transform: rotate(329deg);
+    left: 136px;
+}
+
+
+.course-title {
+    position: absolute;
+    color: var(--yellow);
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.course-title-training {
+    padding-left: 200px;
+    margin-top: 75px;
+}
+
+.cours-title-filmf {
+    padding-left: 300px;
+}
+
+.info {
+    margin: 40px 0;
+   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+
+
+.footer {
+    display: flex;
+    background:  var(--dark-gray);
+    height: 210px;
+}
+
+.footer-logo {
+    margin: 20px 0;
+}
+
+.footer-logo-img {
+    width: 126px;
+    height: 170px;
+}
+
+.footer-con {
+    color: var(--yellow);
+}
+
+
+.cours {
+    background-image: url(/img/im/pngwing.com\ \(15\).png) ;
+    background-repeat: no-repeat;
+    background-size: 1920px 820px;
+    height: 820px;
+}
+
+.cours-title {
+    color: var(--yellow);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.information {
+    background-image: url(../img/2021.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 820px;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+}
+
+.information-img {
+    background-image: url(../img/Луч2.png);
+    background-repeat: no-repeat;
+    background-size: 1920px 820px;
+    position: absolute;
+    width: 1903px;
+    height: 820px;
+    z-index: 1;
+    margin: 0 auto;
+    left: 0px;
+}
+
+.information-text {
+    margin-top: 200px;
+    z-index: 3;
+    position: absolute;
+
+}
+
+.masster {
+    position: relative;
+}
