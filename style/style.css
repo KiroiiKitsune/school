@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: gothampro_regular;
   src: local("gothampro_regular"), local("gothampro_regular"), url(../fonts/GothamPro.woff2) format("woff2"), url(../fonts/GothamPro.woff) format("woff");
@@ -30,6 +31,137 @@
   font-family: Montserrat-Italic;
   src: local("Montserrat-Italic"), local("Montserrat-Italic"), url(../fonts/Montserrat-Italic.woff2) format("wott2"), url(../fonts/Montserrat-Italic.woff) format("woff");
 }
+.slogan {
+  height: 379px;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+.slogan-box {
+  display: flex;
+  margin-top: 55px;
+}
+
+.slogan-box-text {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.slogan-box-text h1 {
+  color: var(--yellow);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.slogan-box-text h2 {
+  color: var(--white);
+}
+
+.slogan-box-img img {
+  height: 340px;
+}
+
+.cen {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.tutor {
+  margin: 100px 0;
+}
+
+.tutor h2 {
+  color: var(--yellow);
+  padding-left: 150px;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.tutor-img {
+  box-shadow: 0px 0px 30px 0px rgb(255, 255, 255);
+  width: 550px;
+  height: 550px;
+  border-radius: 300px;
+  margin-right: 70px;
+}
+
+.tutor-box {
+  display: flex;
+}
+
+.tutor-info h2, p {
+  color: var(--white);
+}
+
+.tutor-info h2 {
+  font-family: gothampro_black;
+  font-size: 55px;
+}
+
+.tutor-info p {
+  font-family: Montserrat-Regular;
+  margin-top: 40px;
+  font-size: 22px;
+}
+
+.courses {
+  margin-bottom: 120px;
+}
+
+.courses h2 {
+  color: var(--white);
+  font-size: 55px;
+  margin-bottom: 50px;
+}
+
+.courses-info {
+  background-color: var(--black);
+  padding: 5px 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 9px 3px rgb(251, 223, 0);
+}
+
+.courses-info__switch {
+  display: none;
+}
+
+.courses-info__body {
+  font-family: gothampro_italic;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+  margin-left: 110px;
+  font-size: 27px;
+  color: var(--white);
+}
+
+.courses-info__switch:checked ~ .courses-info__body {
+  max-height: 100px;
+}
+
+.courses-info__switch:checked ~ .info__headline::before {
+  transform: rotate(180deg) translateY(6px);
+}
+
+.courses-info__headline {
+  display: block;
+  position: relative;
+  margin: 10px 0 15px 75px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-weight: normal;
+  cursor: pointer;
+  color: var(--white);
+  font-size: 30px;
+}
+
+.courses-info__headline:hover {
+  text-decoration: underline;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +170,7 @@
 
 a {
   text-decoration: none;
-  color: var(--medium-grey);
+  color: var(--medium-gray);
 }
 
 li {
@@ -49,7 +181,7 @@ li {
   --yellow: rgb(251, 223, 0);
   --black: rgb(0, 0, 0);
   --white: rgb(255, 255, 255);
-  --medium-grey:rgb(129, 128, 128);
+  --medium-gray:rgb(129, 128, 128);
   --dark-gray:rgb(25, 25, 25);
   --light-gray:rgb(227, 227, 227);
 }
@@ -57,15 +189,16 @@ li {
 html,
 body {
   font-family: gothampro_regular;
+  background-color: var(--black);
 }
 
 .center {
-  padding-left: calc(50% - 900px);
-  padding-right: calc(50% - 900px);
+  padding-left: calc(50% - 800px);
+  padding-right: calc(50% - 800px);
 }
 
 .nav {
-  height: 90px;
+  height: 100px;
   background: var(--yellow);
 }
 
@@ -82,10 +215,9 @@ body {
   font-style: normal;
 }
 
-.logo-img,
-.footer-logo-img {
-  width: 40px;
-  height: 50px;
+.logo-img {
+  width: 250px;
+  height: 60px;
 }
 
 .nav-list {
@@ -94,7 +226,7 @@ body {
   align-items: center;
 }
 
-.nav-item {
+.nav-item a {
   color: var(--black);
 }
 
@@ -190,25 +322,30 @@ body {
   margin-top: 75px;
 }
 
+.cours-title-filmf {
+  padding-left: 300px;
+}
+
 .info {
   margin: 40px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 90px;
-  padding: 0 200px;
+  gap: 30px;
 }
 
 .footer {
   display: flex;
   background: var(--dark-gray);
-  height: 200px;
+  height: 210px;
 }
 
 .footer-logo {
-  color: var(--yellow);
-  font-size: 40px;
-  font-weight: 700;
-  margin-top: 55px;
+  margin: 20px 0;
+}
+
+.footer-logo-img {
+  width: 126px;
+  height: 170px;
 }
 
 .footer-con {
@@ -233,4 +370,29 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 820px;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.information-img {
+  background-image: url(../img/Луч2.png);
+  background-repeat: no-repeat;
+  background-size: 1920px 820px;
+  position: absolute;
+  width: 1903px;
+  height: 820px;
+  z-index: 1;
+  margin: 0 auto;
+  left: 0px;
+}
+
+.information-text {
+  margin-top: 200px;
+  z-index: 3;
+  position: absolute;
+}
+
+.masster {
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

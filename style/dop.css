@@ -152,9 +152,6 @@
     font-size: 31px;
 }
 
-.inner-work {
-    margin: 20px 0;
-}
 
 .btn {
     margin-top: 30px;
@@ -168,7 +165,34 @@
 }
 
 .info {
-    margin-top: 160px;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 40px;
+    width: 1092px;
+    /* margin-top: 160px; */
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px 90px;
+    padding: 0 200px;
+}
+
+.course {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(to right,
+            rgb(251, 223, 0) 35%,
+            rgb(251, 223, 0) 0%,
+            black 0%,
+            black 100%);
+    border-bottom: 1px solid rgb(129, 128, 128)
+}
+
+.course-prog {
+    width: 562px;
+}
+
+.course-title {
+    color: black;
+}
+
+.inner-work {
+    margin: 20px 0;
 }
