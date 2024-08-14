@@ -1,6 +1,5 @@
 
 .slogan {
-    height: 379px;
     padding-left: 250px;
     padding-right: 250px;
 }
@@ -8,12 +7,14 @@
 .slogan-box {
     display: flex;
     margin-top: 55px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .slogan-box-text {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    
 }
 
 .slogan-box-text h1 {
@@ -32,4 +33,20 @@
 
 .slogan-box-img img {
     height: 340px;
+}
+
+.concept {
+    margin-bottom: 60px;
+}
+
+.concept-box {
+    border: 1px solid var(--yellow);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+
+.concept-box-text {
+    font-size: 25px;
+   font-family: Montserrat-Regular;
 }
