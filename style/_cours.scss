@@ -1,7 +1,6 @@
-
 .cen {
-    padding-left: 200px;
-    padding-right: 200px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .slogan {
@@ -10,36 +9,36 @@
 }
 
 .slogan-box-text {
-      width: 720px;
+  width: 900px;
 }
 
 .slogan-box-text h1 {
-      font-size: 100px;
-    font-weight: 500;
+  font-size: 100px;
+  font-weight: 500;
 }
 
 .slogan-box-text h2 {
   font-size: 20px;
-    color: var(--white);
-    font-weight: 400;
+  color: var(--white);
+  font-weight: 400;
 }
 
 .inspiration {
   color: var(--white);
-  
 }
 
 .inspiration h2 {
-font-size: 20px;
+  font-size: 20px;
   line-height: 40px;
   font-family: Montserrat-Regular;
   margin-bottom: 50px;
 }
 
 .purpose-box {
-      border: 1px solid rgb(251, 223, 0);
-    border-radius: 20px;
-    padding: 32px;
+  border: 1px solid rgb(251, 223, 0);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 17px -19px 36px -14px var(--yellow);
 }
 
 .purpose-box p {
@@ -53,50 +52,91 @@ font-size: 20px;
   line-height: 100px;
 }
 
-
 .tutor {
-    margin: 100px 0; 
+  margin: 100px 0;
 }
 
 .tutor-title {
-    color: var(--yellow);
-    font-size: 50px;
-    margin-bottom: 80px;
+  color: var(--yellow);
+  font-size: 50px;
+  margin-bottom: 80px;
 }
 
 .tutor-img {
-    box-shadow: 0px 0px 30px 0px var(--white);
-    width: 550px;
-    height: 550px;
-    border-radius: 50px;
-    margin-right: 70px;
+  box-shadow: 0px 0px 30px 0px var(--white);
+  width: 550px;
+  height: 550px;
+  border-radius: 50px;
+  margin-right: 70px;
 }
 
 .tutor-box {
-    display: flex;
+  display: flex;
 }
 
 .tutor-info {
-    border: 1px solid var(--yellow);
-    border-radius: 20px;
-    padding: 20px;
+  border: 1px solid var(--yellow);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 17px -19px 36px -14px var(--yellow);
 }
 
-
-.tutor-info h2, p {
- color: var(--white);
- 
+.tutor-info h2,
+p {
+  color: var(--white);
 }
 
 .tutor-info h2 {
-font-family: gothampro_black;
-font-size: 55px;
+  font-family: gothampro_black;
+  font-size: 55px;
 }
 
-.tutor-info p  {
-     font-family: Montserrat-Regular;
-    margin-top: 40px;
-    font-size: 22px;
+.tutor-info p {
+  font-family: Montserrat-Regular;
+  margin-top: 40px;
+  font-size: 22px;
+}
+
+// стиль у цитате
+.blockquote {
+  position: relative;
+  font-size: 22px;
+  margin: 16px 200px 46px 200px;
+  border: 2px solid var(--yellow);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 17px -19px 36px -14px var(--yellow);
+}
+.blockquote::after {
+  content: "";
+  position: absolute;
+  border: 2px solid var(--yellow);
+  border-radius: 0 50px 0 0;
+  width: 40px;
+  height: 40px;
+  bottom: -40px;
+  left: 50px;
+  border-bottom: none;
+  border-left: none;
+  z-index: 2;
+  box-sizing: border-box;
+}
+.blockquote::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  border: 6px solid var(--black);
+  bottom: -3px;
+  left: 50px;
+  z-index: 1;
+}
+.blockquote-author {
+  position: absolute;
+  bottom: -39px;
+  left: 110px;
+  font-size: 22px;
+  font-family: gothampro_bold;
+  color: var(--yellow);
 }
 
 .know {
@@ -110,9 +150,9 @@ font-size: 55px;
 }
 
 .know-box {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
 }
 
 .know-inf {
@@ -120,15 +160,15 @@ font-size: 55px;
 }
 
 .know-inf-num {
-    color: rgb(0, 0, 0);
-    border-radius: 35px;
-    background-color: rgb(251, 223, 0);
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    padding-top: 6px;
-    font-size: 35px;
-    margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+  border-radius: 35px;
+  background-color: rgb(251, 223, 0);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 6px;
+  font-size: 35px;
+  margin-bottom: 10px;
 }
 
 .know-inf-tx {
@@ -137,14 +177,13 @@ font-size: 55px;
 }
 
 .courses {
-
-    margin-bottom: 120px;
+  margin-bottom: 120px;
 }
 
 .courses h2 {
-    color: var(--white);
-    font-size: 55px;
-    margin-bottom: 50px;
+  color: var(--white);
+  font-size: 55px;
+  margin-bottom: 50px;
 }
 
 .courses-info {
@@ -160,16 +199,16 @@ font-size: 55px;
 }
 
 .courses-info__body {
-    font-family: gothampro_italic;
+  font-family: gothampro_italic;
   max-height: 0;
   overflow: hidden;
   transition: 0.4s;
-    margin-left: 110px;
-    font-size: 27px;
-    color: var(--white);
+  margin-left: 110px;
+  font-size: 27px;
+  color: var(--white);
 }
 
-.courses-info__switch:checked~.courses-info__body {
+.courses-info__switch:checked ~ .courses-info__body {
   max-height: 100px;
 }
 
@@ -184,7 +223,7 @@ font-size: 55px;
 //   border-left-color: transparent;
 // }
 
-.courses-info__switch:checked~.info__headline::before {
+.courses-info__switch:checked ~ .info__headline::before {
   transform: rotate(180deg) translateY(6px);
 }
 
@@ -197,7 +236,6 @@ font-size: 55px;
   cursor: pointer;
   color: var(--white);
   font-size: 30px;
-
 }
 
 .courses-info__headline:hover {
